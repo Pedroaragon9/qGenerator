@@ -55,18 +55,22 @@ def create_csv():
 
     for plate, cell_types_info in enumerate(all_plates_info, start=1):
         tray = simpledialog.askstring("Input", f"Enter tray for plate {plate} (B, G, R):").upper()
+        plate_identifier = simpledialog.askstring("Input", f"Enter identifier for plate {plate} (optional):")
         condition = simpledialog.askstring("Input", f"Enter condition for plate {plate}:")
+
         for cell_type, positions in cell_types_info:
             for position in positions:
-                file_name = generate_filename(user, system, method, condition, cell_type, position)
+                file_name_with_identifier = generate_filename(user, system, method, condition, cell_type, position)
+                if plate_identifier:
+                    file_name_with_identifier += f"_{plate_identifier}"
                 df = df.append({
                     "Sample Type": "Unknown",
-                    "File Name": file_name,
+                    "File Name": file_name_with_identifier,
                     "Sample ID": 1, 
                     "Path": path,
                     "Position": f"{tray}{position}",
                     "Inj Vol": inj_vol
-                    # Update other fields as necessary
+                    # ... (other fields as necessary)
                 }, ignore_index=True)
 
     if randomize_queue:
