@@ -7,7 +7,6 @@
 - **Plate Selection**: Supports 96-well and 384-well formats with visual selection.
 - **Sample Grouping**: Allows grouping of samples by color-coded sets with custom injection volumes and instrument methods.
 - **CSV Output**: Generates an Xcalibur-compatible CSV file, populated with details such as Sample Type, Filename, Path, Instrument Method, Position, and Injection Volume.
-- **Viewer Options**: Separate viewer windows for sample overviews and plate layouts.
 - **Cross-Platform**: Available for both macOS and Windows.
 
 ## Installation
