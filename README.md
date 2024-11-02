@@ -17,18 +17,6 @@
 - Python 3.10 or newer
 - Required libraries: `qtpy`, `pandas`, `pyinstaller` (for building executables)
 
-### Running the Application
-
-If you prefer not to build from source, you can download the prebuilt binaries:
-
-1. Download the appropriate binary file for your operating system:
-   - **Windows**: `QGenerator.exe`
-   - **macOS**: `QGenerator.app`
-
-2. Place the executable in a desired folder and run it directly.
-
-If you wish to build the application yourself, follow the steps below.
-
 ### Building from Source
 
 To run the application from source or make adjustments:
@@ -37,3 +25,8 @@ To run the application from source or make adjustments:
    ```bash
    git clone https://github.com/Pedroaragon9/qGenerator.git
    cd qGenerator
+
+### Running the Application
+
+If you prefer not to build from source, you can download the prebuilt binaries:
+To download the latest version of **QGenerator**, go to the [Releases page](https://github.com/Pedroaragon9/qGenerator/releases). You’ll find both Windows and macOS binaries available for download.
