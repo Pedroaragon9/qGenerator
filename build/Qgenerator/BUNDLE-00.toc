@@ -1,3 +1,0 @@
-([('Qgenerator',
-   '/Users/Pedarf/Desktop/Python scripts/qGenerator/dist/Qgenerator',
-   'EXECUTABLE')],)
